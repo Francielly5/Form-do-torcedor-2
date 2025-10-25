@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário do Torcedor | CBF</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+ 
+<body>
+    <header>
+        <img src="./logo-cbf.png" alt="Logo da CBF" class="logo">
+        <h1>Cadastro do Torcedor</h1>
+        <p>Preencha os dados para se juntar à comunidade oficial de torcedores.</p>
+    </header>
+ 
+    <main>
+        <fieldset>
+            <legend>Formulário do Torcedor | CBF</legend>
+            <form action="processar_formulario.php" method="post">
+                <label for="nome">Nome Completo*</label>
+                <input class="input-name" type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+ 
+                <label for="cpf">CPF*</label>
+                <input class="input-cpf" type="text" maxlength="14" id="cpf" name="cpf" placeholder="000.000.000-00"
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+ 
+                <label class="section-label">Frequência aos jogos*</label>
+                <div class="frequencia" id="frequencia">
+                    <div class="radio-option">
+                        <input type="radio" name="frequencia" value="nunca" id="freq-nunca" required>
+                        <label for="freq-nunca">Nunca</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="frequencia" value="ocasionalmente" id="freq-ocasionalmente">
+                        <label for="freq-ocasionalmente">Ocasionalmente (1 a 2 Jogos)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="frequencia" value="frequentemente" id="freq-frequentemente">
+                        <label for="freq-frequentemente">Frequentemente (3 a 5 Jogos)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="frequencia" value="sempre" id="freq-sempre">
+                        <label for="freq-sempre">Sempre (Todos os Jogos)</label>
+                    </div>
+                </div>
+ 
+                <div class="checkboxes">
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="socio" value="sim" id="socio">
+                        <label for="socio">Sou sócio torcedor</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" name="camiseta" value="sim" id="camiseta">
+                        <label for="camiseta">Possuo camiseta oficial</label>
+                    </div>
+                </div>
+ 
+                <label for="time">Time de Futebol do Coração*</label>
+                <select class="input-time" name="time" id="time" required>
+                    <option value="" disabled selected>Selecione seu Time</option>
+                    <option value="Atlético-MG">Atlético-MG</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Botafogo">Botafogo</option>
+                    <option value="Bragantino">Bragantino</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Corinthians">Corinthians</option>
+                    <option value="Cruzeiro">Cruzeiro</option>
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Fluminense">Fluminense</option>
+                    <option value="Fortaleza">Fortaleza</option>
+                    <option value="Grêmio">Grêmio</option>
+                    <option value="Internacional">Internacional</option>
+                    <option value="Juventude">Juventude</option>
+                    <option value="Mirassol">Mirassol</option>
+                    <option value="Palmeiras">Palmeiras</option>
+                    <option value="Santos">Santos</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Vasco">Vasco</option>
+                    <option value="Vitória">Vitória</option>
+                </select>
+ 
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar Cadastro</button>
+                    <button type="reset" class="btn-reset">Limpar Campos</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+ 
+    <footer>
+        Desenvolvido por <a href="https://github.com/Francielly5">Francielly de Melo </a>
+    </footer>
+    
+</html>
+
+
+ 
