@@ -124,22 +124,11 @@ select:focus {
     border-color: black;
 }
  
-.input-name:invalid:not(:placeholder-shown),
-.input-cpf:invalid:not(:placeholder-shown),
-select:invalid:not([value=""]) {
-    border-color: var(--input-invalido);
-}
- 
 .input-name:valid,
 .input-cpf:valid,
 .input-time:valid {
     border-color: var(--cbf-verde);
 }
- 
-.input-name:invalid, .input-cpf:invalid {
-    border-color: var(--input-invalido);
-}
- 
  
 /* -------------------------------------------------------------------------- */
 /* Radio Buttons e Checkboxes (Customizados)             */
