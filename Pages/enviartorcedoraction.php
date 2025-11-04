@@ -16,5 +16,6 @@ echo "<p> Qual o time de coração?" . $_POST['time']  . "<?p>";
 var_dump($_POST);
 var_dump($_GET);
  
- 
+
+
 ?>
